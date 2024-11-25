@@ -1,0 +1,173 @@
+body {
+    width: 270mm;
+    height: 297mm;
+    margin: 0 auto;
+    padding: 20mm;
+    box-sizing: border-box;
+  }
+/* Reset 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: ltr;
+}*/
+
+/* Header */
+.header {
+    background-color: #2e3234;
+    color: white;
+    display: grid;
+    align-items: center;
+    padding: 20px;
+    height:150;
+    position: relative;
+}
+
+.name {
+    font-size: 40px;
+    text-align:center;
+    margin-top:-75px;
+} 
+
+.profile-image {
+    width: 130px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 100% / 100%; /* Oval shape */
+    margin-left :40px;
+    position: left;
+} 
+/* Container */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 450px;
+    background-color: #ede8e2;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    color: #2e3234;
+    margin-bottom: 10px;
+}
+
+.sidebar p {
+    margin: 10px 0;
+}
+
+.icon {
+    margin-right: 5px;
+}
+/* Style for Education Section */
+.degree {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.degree-content {
+    position: relative;
+    padding-left: 20px; /* Space for bullet and line */
+}
+
+.degree-content::before {
+    content: "";
+    position: absolute;
+    top: 17px;/* Adjust to align bullet with text */
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background-color: #333; /* Color of the bullet */
+    border-radius: 50%; /* Makes it a circle */
+}
+
+.degree-content::after {
+    content: "";
+    position: absolute;
+    top: 30px; /* Start the line slightly below the bullet */
+    left: 3px; /* Aligns line under the bullet */
+    width: 2px; /* Thickness of the vertical line */
+    height: calc(100% - 40px); /* Dynamic height to extend line to text end */
+    background-color: #333; /* Color of the line */
+}
+
+/* Main Content */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: white;
+}
+
+.content h2 {
+    font-size: 20px;
+    color: #2e3234;
+    margin-bottom: 10px;
+}
+
+.content hr {
+    border: none;
+    border-top: 1px solid #2e3234;
+    margin: 10px 0 20px;
+}
+
+.content p {
+    margin-bottom: 20px;
+}
+
+.content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Work Experience Section */
+.work-experience {
+    margin: 20px 0;
+}
+
+.work-experience h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.job {
+    margin-bottom: 20px;
+}
+
+.job h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.date {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 10px;
+    margin-top: -5px;
+}
+
+.job ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: -10px;
+}
+
+.job ul li {
+    margin-bottom: 8px;
+}
+
